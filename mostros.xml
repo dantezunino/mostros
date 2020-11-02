@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MOSTROS>
-    <BICHO id="0000">
+    <BICHO>
         <NAME>Ettercap</NAME>
         <ALIGNMENT>NE</ALIGNMENT>
         <AC>13</AC>
@@ -49,7 +49,7 @@
         <ACTIONVALOR_4></ACTIONVALOR_4>
         <ACTIONMODI_4></ACTIONMODI_4>
     </BICHO>
-    <BICHO id="0001">
+    <BICHO>
         <NAME>Archivaldo</NAME>
         <ALIGNMENT></ALIGNMENT>
         <AC></AC>
@@ -96,7 +96,7 @@
         <ACTIONVALOR_4></ACTIONVALOR_4>
         <ACTIONMODI_4></ACTIONMODI_4>
     </BICHO>
-    <BICHO id="0002">
+    <BICHO>
         <NAME></NAME>
         <ALIGNMENT></ALIGNMENT>
         <AC></AC>
