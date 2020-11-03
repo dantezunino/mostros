@@ -10,15 +10,15 @@
         <HEIGHT>1.80 mts.</HEIGHT>
         <WEIGHT>90 kg.</WEIGHT>
         <STR>14</STR>
-        <STRMOD>2</STRMOD>
+        <STRMOD>+2</STRMOD>
         <DEX>15</DEX>
-        <DEXMOD>2</DEXMOD>
+        <DEXMOD>+2</DEXMOD>
         <CON>13</CON>
-        <CONMOD>1</CONMOD>
+        <CONMOD>+1</CONMOD>
         <INT>7</INT>
         <INTMOD>-2</INTMOD>
         <WIS>12</WIS>
-        <WISMOD>1</WISMOD>
+        <WISMOD>+1</WISMOD>
         <CHR>8</CHR>
         <CHRMOD>-1</CHRMOD>
         <SKILL>Perception +3; Stealth +4; Survival +3.</SKILL>
@@ -27,7 +27,7 @@
         <POWER_1>Spider Climb. The ettercap can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</POWER_1>
         <POWER_2>Web Sense. While in contact with a web, the ettercap knows the exact location of any other creature in contact with the same web.</POWER_2>
         <POWER_3>Web Walker. The ettercap ignores movement restrictions caused by webbing.</POWER_3>
-        <POWER_4></POWER_4>
+        <POWER_4>.</POWER_4>
         <ACTION_DES>Multiattack. The ettercap makes two attacks: one with its bite and one with its claws.</ACTION_DES>
         <ATTACK>4</ATTACK>
         <ACTION_1>Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: (1d8 + 2) piercing damage plus (1d8)poison damage. The target must succeed on a DC 11 Constitution saving throw or be poisoned for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success</ACTION_1>
@@ -41,12 +41,12 @@
         <ACTION_3>    Web (Recharge 5-6). Ranged Weapon Attack: +4 to hit, reach 30/60 ft., one large or smaller creature. The creature is restrained by webbing. As an action, the restrained creature can make a DC 11 Strength check, escaping from the webbing on a success. The effect also ends if the webbing is destroyed. The webbing has AC 10, 5 hit points, vulnerability to fire damage, and immunity to bludgeoning, poison, and psychic damage.
 
         </ACTION_3>
-        <ACTIONDADOS_3></ACTIONDADOS_3>
-        <ACTIONVALOR_3></ACTIONVALOR_3>
-        <ACTIONMODI_3></ACTIONMODI_3>
-        <ACTION_4></ACTION_4>
-        <ACTIONDADOS_4></ACTIONDADOS_4>
-        <ACTIONVALOR_4></ACTIONVALOR_4>
-        <ACTIONMODI_4></ACTIONMODI_4>
+        <ACTIONDADOS_3>.</ACTIONDADOS_3>
+        <ACTIONVALOR_3>.</ACTIONVALOR_3>
+        <ACTIONMODI_3>.</ACTIONMODI_3>
+        <ACTION_4>.</ACTION_4>
+        <ACTIONDADOS_4>.</ACTIONDADOS_4>
+        <ACTIONVALOR_4>.</ACTIONVALOR_4>
+        <ACTIONMODI_4>.</ACTIONMODI_4>
     </BICHO>
 </MOSTROS>
