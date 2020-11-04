@@ -283,6 +283,382 @@
         <ACTIONMODI_4>4</ACTIONMODI_4>
     </BICHO>
     <BICHO>
+        <NAME>Animated Armor</NAME>
+        <ALIGNMENT>Unaligned</ALIGNMENT>
+        <AC>18</AC>
+        <HP>33 (6d8+6).</HP>
+        <SPEED>25ft.</SPEED>
+        <SIZE>Medium</SIZE>
+        <HEIGHT>1.7m</HEIGHT>
+        <WEIGHT>35kg.</WEIGHT>
+        <STR>14</STR>
+        <STRMOD>+2</STRMOD>
+        <DEX>11</DEX>
+        <DEXMOD>0</DEXMOD>
+        <CON>13</CON>
+        <CONMOD>+1</CONMOD>
+        <INT>1</INT>
+        <INTMOD>-5 </INTMOD>
+        <WIS>3</WIS>
+        <WISMOD>-4 </WISMOD>
+        <CHR>1</CHR>
+        <CHRMOD>-5 </CHRMOD>
+        <SKILL>.</SKILL>
+        <SENSES>blindsight 60ft. (blind beyond this radius. Passive Perception 6.</SENSES>
+        <CHALLENGE>1 (200XP)</CHALLENGE>
+        <POWER_1>Antimagic Susceptibility: The armor is Incapacitated while in the area of an Antimagic Field. If targeted by Dispel Magic, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall Unconscious for 1 minute.</POWER_1>
+        <POWER_2>False Appearance: While the armor remains motionless, it is indistinguishable from a normal suit of armor.</POWER_2>
+        <POWER_3>.</POWER_3>
+        <POWER_4>.</POWER_4>
+        <ACTION_DES>Multiattack: The armor makes two Melee Attacks.</ACTION_DES>
+        <ATTACK>4</ATTACK>
+        <ACTION_1>Slam: Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.</ACTION_1>
+        <ACTIONDADOS_1>1</ACTIONDADOS_1>
+        <ACTIONVALOR_1>6</ACTIONVALOR_1>
+        <ACTIONMODI_1>2</ACTIONMODI_1>
+        <ACTION_2>.</ACTION_2>
+        <ACTIONDADOS_2>.</ACTIONDADOS_2>
+        <ACTIONVALOR_2>.</ACTIONVALOR_2>
+        <ACTIONMODI_2>.</ACTIONMODI_2>
+        <ACTION_3>.</ACTION_3>
+        <ACTIONDADOS_3>.</ACTIONDADOS_3>
+        <ACTIONVALOR_3>.</ACTIONVALOR_3>
+        <ACTIONMODI_3>.</ACTIONMODI_3>
+        <ACTION_4>.</ACTION_4>
+        <ACTIONDADOS_4>.</ACTIONDADOS_4>
+        <ACTIONVALOR_4>.</ACTIONVALOR_4>
+        <ACTIONMODI_4>.</ACTIONMODI_4>
+    </BICHO>
+    <BICHO>
+        <NAME>Flying Sword</NAME>
+        <ALIGNMENT>Unaligned</ALIGNMENT>
+        <AC>17</AC>
+        <HP>17 (5d6).</HP>
+        <SPEED>0ft. fly 50ft.</SPEED>
+        <SIZE>Small</SIZE>
+        <HEIGHT>1mt.</HEIGHT>
+        <WEIGHT>5kg.</WEIGHT>
+        <STR>14</STR>
+        <STRMOD>+2</STRMOD>
+        <DEX>11</DEX>
+        <DEXMOD>0</DEXMOD>
+        <CON>13</CON>
+        <CONMOD>+1</CONMOD>
+        <INT>1</INT>
+        <INTMOD>-5 </INTMOD>
+        <WIS>3</WIS>
+        <WISMOD>-4 </WISMOD>
+        <CHR>1</CHR>
+        <CHRMOD>-5 </CHRMOD>
+        <SKILL>.</SKILL>
+        <SENSES>Blindsight 60 Ft. (Blind Beyond This Radius), passive Perception 6.</SENSES>
+        <CHALLENGE>1 (200XP).</CHALLENGE>
+        <POWER_1>Antimagic Susceptibility. The armor is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.</POWER_1>
+        <POWER_2>False Appearance. While the armor remains motionless, it is indistinguishable from a normal suit of armor.</POWER_2>
+        <POWER_3>.</POWER_3>
+        <POWER_4>.</POWER_4>
+        <ACTION_DES>Multiattack. The armor makes two melee attacks.</ACTION_DES>
+        <ATTACK>4</ATTACK>
+        <ACTION_1>Slam. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: (1d6 + 2) bludgeoning damage. </ACTION_1>
+        <ACTIONDADOS_1>1</ACTIONDADOS_1>
+        <ACTIONVALOR_1>6</ACTIONVALOR_1>
+        <ACTIONMODI_1>2</ACTIONMODI_1>
+        <ACTION_2>.</ACTION_2>
+        <ACTIONDADOS_2>.</ACTIONDADOS_2>
+        <ACTIONVALOR_2>.</ACTIONVALOR_2>
+        <ACTIONMODI_2>.</ACTIONMODI_2>
+        <ACTION_3>.</ACTION_3>
+        <ACTIONDADOS_3>.</ACTIONDADOS_3>
+        <ACTIONVALOR_3>.</ACTIONVALOR_3>
+        <ACTIONMODI_3>.</ACTIONMODI_3>
+        <ACTION_4>.</ACTION_4>
+        <ACTIONDADOS_4>.</ACTIONDADOS_4>
+        <ACTIONVALOR_4>.</ACTIONVALOR_4>
+        <ACTIONMODI_4>.</ACTIONMODI_4>
+    </BICHO>
+    <BICHO>
+        <NAME>Rug of Smothering</NAME>
+        <ALIGNMENT>Unaligned</ALIGNMENT>
+        <AC>12</AC>
+        <HP>33 (6d10).</HP>
+        <SPEED>10ft</SPEED>
+        <SIZE>Large</SIZE>
+        <HEIGHT>2mts.</HEIGHT>
+        <WEIGHT>10kg</WEIGHT>
+        <STR>17</STR>
+        <STRMOD>+3</STRMOD>
+        <DEX>14</DEX>
+        <DEXMOD>+2</DEXMOD>
+        <CON>10</CON>
+        <CONMOD>0</CONMOD>
+        <INT>1</INT>
+        <INTMOD>-5 </INTMOD>
+        <WIS>3</WIS>
+        <WISMOD>-4 </WISMOD>
+        <CHR>1</CHR>
+        <CHRMOD>-5 </CHRMOD>
+        <SKILL>.</SKILL>
+        <SENSES>Blindsight 60 Ft. (Blind Beyond This Radius), passive Perception 6.</SENSES>
+        <CHALLENGE>2 (450XP).</CHALLENGE>
+        <POWER_1>Antimagic Susceptibility. The rug is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the rug must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.</POWER_1>
+        <POWER_2>Damage Transfer. While it is grappling a creature, the rug takes only half the damage dealt to it, and the creature grappled by the rug takes the other half.</POWER_2>
+        <POWER_3>False Appearance. While the rug remains motionless, it is indistinguishable from a normal rug.</POWER_3>
+        <POWER_4>.</POWER_4>
+        <ACTION_DES>.</ACTION_DES>
+        <ATTACK>5</ATTACK>
+        <ACTION_1>Smother. Melee Weapon Attack: +5 to hit, reach 5 ft., one medium or smaller creature. bludgeoning damage On Hit: The creature is grappled escape DC 13. Until this grapple ends, the target is restrained, blinded, and at risk of suffocating, and the rug can't smother another target. In addition, at the start of each of the target's turns, the target takes 10 (2d6 + 3) bludgeoning damage.</ACTION_1>
+        <ACTIONDADOS_1>2</ACTIONDADOS_1>
+        <ACTIONVALOR_1>6</ACTIONVALOR_1>
+        <ACTIONMODI_1>3</ACTIONMODI_1>
+        <ACTION_2>.</ACTION_2>
+        <ACTIONDADOS_2>.</ACTIONDADOS_2>
+        <ACTIONVALOR_2>.</ACTIONVALOR_2>
+        <ACTIONMODI_2>.</ACTIONMODI_2>
+        <ACTION_3>.</ACTION_3>
+        <ACTIONDADOS_3>.</ACTIONDADOS_3>
+        <ACTIONVALOR_3>.</ACTIONVALOR_3>
+        <ACTIONMODI_3>.</ACTIONMODI_3>
+        <ACTION_4>.</ACTION_4>
+        <ACTIONDADOS_4>.</ACTIONDADOS_4>
+        <ACTIONVALOR_4>.</ACTIONVALOR_4>
+        <ACTIONMODI_4>.</ACTIONMODI_4>
+    </BICHO>
+    <BICHO>
+        <NAME>Ankheg</NAME>
+        <ALIGNMENT>Unaligned</ALIGNMENT>
+        <AC>14</AC>
+        <HP>39 (6d10+6).</HP>
+        <SPEED>30ft. burrow 10ft.</SPEED>
+        <SIZE>Large</SIZE>
+        <HEIGHT>3mts.</HEIGHT>
+        <WEIGHT>370kg.</WEIGHT>
+        <STR>17</STR>
+        <STRMOD>+3</STRMOD>
+        <DEX>11</DEX>
+        <DEXMOD>0</DEXMOD>
+        <CON>13</CON>
+        <CONMOD>+1</CONMOD>
+        <INT>1</INT>
+        <INTMOD>-5 </INTMOD>
+        <WIS>13</WIS>
+        <WISMOD>+1</WISMOD>
+        <CHR>6</CHR>
+        <CHRMOD>-2 </CHRMOD>
+        <SKILL>.</SKILL>
+        <SENSES>Darkvision 60 Ft., Tremorsense 60 Ft., passive Perception 11</SENSES>
+        <CHALLENGE>2 (450XP).</CHALLENGE>
+        <POWER_1>.</POWER_1>
+        <POWER_2>.</POWER_2>
+        <POWER_3>.</POWER_3>
+        <POWER_4>.</POWER_4>
+        <ACTION_DES>.</ACTION_DES>
+        <ATTACK>5</ATTACK>
+        <ACTION_1>Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (2d6 + 3) slashing damage plus (1d6)acid damage. If the target is a Large or smaller creature, it is grappled (escape DC 13). Until this grapple ends, the ankheg can bite only the grappled creature and has advantage on attack rolls to do so</ACTION_1>
+        <ACTIONDADOS_1>3</ACTIONDADOS_1>
+        <ACTIONVALOR_1>6</ACTIONVALOR_1>
+        <ACTIONMODI_1>3</ACTIONMODI_1>
+        <ACTION_2>Acid Spray (Recharge 6). The ankheg spits acid in a line that is 30 ft. long and 5 ft. wide, provided that it has no creature grappled. Each creature in that line must make a DC 13 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one.</ACTION_2>
+        <ACTIONDADOS_2>3</ACTIONDADOS_2>
+        <ACTIONVALOR_2>6</ACTIONVALOR_2>
+        <ACTIONMODI_2>0</ACTIONMODI_2>
+        <ACTION_3>.</ACTION_3>
+        <ACTIONDADOS_3>.</ACTIONDADOS_3>
+        <ACTIONVALOR_3>.</ACTIONVALOR_3>
+        <ACTIONMODI_3>.</ACTIONMODI_3>
+        <ACTION_4>.</ACTION_4>
+        <ACTIONDADOS_4>.</ACTIONDADOS_4>
+        <ACTIONVALOR_4>.</ACTIONVALOR_4>
+        <ACTIONMODI_4>.</ACTIONMODI_4>
+    </BICHO>
+    <BICHO>
+        <NAME>Azer</NAME>
+        <ALIGNMENT>LN</ALIGNMENT>
+        <AC>17</AC>
+        <HP>39 (6d8+12).</HP>
+        <SPEED>30ft.</SPEED>
+        <SIZE>Medium</SIZE>
+        <HEIGHT>1.5mts</HEIGHT>
+        <WEIGHT>95kg.</WEIGHT>
+        <STR>17</STR>
+        <STRMOD>+3</STRMOD>
+        <DEX>12</DEX>
+        <DEXMOD>+1</DEXMOD>
+        <CON>15</CON>
+        <CONMOD>+2</CONMOD>
+        <INT>12</INT>
+        <INTMOD>+1</INTMOD>
+        <WIS>13</WIS>
+        <WISMOD>+1</WISMOD>
+        <CHR>10</CHR>
+        <CHRMOD>0</CHRMOD>
+        <SKILL>.</SKILL>
+        <SENSES>passive Perception 11</SENSES>
+        <CHALLENGE>2 (450 XP).</CHALLENGE>
+        <POWER_1>Heated Body. A creature that touches the azer or hits it with a melee attack while within 5 ft. of it takes 5 (1d10) fire damage.</POWER_1>
+        <POWER_2>Heated Weapons. When the azer hits with a metal melee weapon, it deals an extra 3 (1d6) fire damage (included in the attack).</POWER_2>
+        <POWER_3>Illumination. The azer sheds bright light in a 10-foot radius and dim light for an additional 10 ft..</POWER_3>
+        <POWER_4>.</POWER_4>
+        <ACTION_DES>.</ACTION_DES>
+        <ATTACK>5</ATTACK>
+        <ACTION_1>Warhammer. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (1d10 + 3) bludgeoning damage plus (1d6)fire damage. two handed</ACTION_1>
+        <ACTIONDADOS_1>1</ACTIONDADOS_1>
+        <ACTIONVALOR_1>10</ACTIONVALOR_1>
+        <ACTIONMODI_1>3</ACTIONMODI_1>
+        <ACTION_2>Warhammer. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (1d8 + 3) bludgeoning damage plus (1d6)fire damage. one handed</ACTION_2>
+        <ACTIONDADOS_2>1</ACTIONDADOS_2>
+        <ACTIONVALOR_2>8</ACTIONVALOR_2>
+        <ACTIONMODI_2>3</ACTIONMODI_2>
+        <ACTION_3>.</ACTION_3>
+        <ACTIONDADOS_3>.</ACTIONDADOS_3>
+        <ACTIONVALOR_3>.</ACTIONVALOR_3>
+        <ACTIONMODI_3>.</ACTIONMODI_3>
+        <ACTION_4>.</ACTION_4>
+        <ACTIONDADOS_4>.</ACTIONDADOS_4>
+        <ACTIONVALOR_4>.</ACTIONVALOR_4>
+        <ACTIONMODI_4>.</ACTIONMODI_4>
+    </BICHO>
+    <BICHO>
+        <NAME>Banshee</NAME>
+        <ALIGNMENT>CE</ALIGNMENT>
+        <AC>12</AC>
+        <HP>58 (13d8).</HP>
+        <SPEED>0ft.fly 40ft</SPEED>
+        <SIZE>Medium</SIZE>
+        <HEIGHT>1.7mts</HEIGHT>
+        <WEIGHT>???</WEIGHT>
+        <STR>1</STR>
+        <STRMOD>-5 </STRMOD>
+        <DEX>14</DEX>
+        <DEXMOD>+2</DEXMOD>
+        <CON>10</CON>
+        <CONMOD>0</CONMOD>
+        <INT>12</INT>
+        <INTMOD>+1</INTMOD>
+        <WIS>11</WIS>
+        <WISMOD>0</WISMOD>
+        <CHR>17</CHR>
+        <CHRMOD>+3</CHRMOD>
+        <SKILL>.</SKILL>
+        <SENSES>darkvision 60ft., passive Perception 10.</SENSES>
+        <CHALLENGE>4 (1100XP).</CHALLENGE>
+        <POWER_1>Detect Life. The banshee can magically sense the presence of living creatures up to 5 miles away. She knows the general direction they're in but not their exact locations.</POWER_1>
+        <POWER_2>Incorporeal Movement. The banshee can move through other creatures and objects as if they were difficult terrain. She takes 5 (1d10) force damage if she ends her turn inside an object.</POWER_2>
+        <POWER_3>.</POWER_3>
+        <POWER_4>.</POWER_4>
+        <ACTION_DES>.</ACTION_DES>
+        <ATTACK>4</ATTACK>
+        <ACTION_1>Corrupting Touch. Melee Spell Attack: +4 to hit, reach 5 ft., one target. Hit: 12 (3d6 + 2) necrotic damage.</ACTION_1>
+        <ACTIONDADOS_1>3</ACTIONDADOS_1>
+        <ACTIONVALOR_1>6</ACTIONVALOR_1>
+        <ACTIONMODI_1>2</ACTIONMODI_1>
+        <ACTION_2>Horrifying Visage. Each non-undead creature within 60 feet of the banshee that can see her must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if the banshee is within line of sight, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the banshee's Horrifying Visage for the next 24 hours.</ACTION_2>
+        <ACTIONDADOS_2>.</ACTIONDADOS_2>
+        <ACTIONVALOR_2>.</ACTIONVALOR_2>
+        <ACTIONMODI_2>.</ACTIONMODI_2>
+        <ACTION_3>Wail (1/Day). The banshee releases a mournful wail, provided that she isn't in sunlight. This wail has no effect on constructs and undead . All other creatures within 30 feet of her that can hear her must  make a DC 13 Constitution saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes 10 (3d6) psychic damage.</ACTION_3>
+        <ACTIONDADOS_3>3</ACTIONDADOS_3>
+        <ACTIONVALOR_3>6</ACTIONVALOR_3>
+        <ACTIONMODI_3>0</ACTIONMODI_3>
+        <ACTION_4>.</ACTION_4>
+        <ACTIONDADOS_4>.</ACTIONDADOS_4>
+        <ACTIONVALOR_4>.</ACTIONVALOR_4>
+        <ACTIONMODI_4>.</ACTIONMODI_4>
+    </BICHO>
+    <BICHO>
+        <NAME>Basilisk</NAME>
+        <ALIGNMENT>Unaligned</ALIGNMENT>
+        <AC>15</AC>
+        <HP>52 (8d8+16)</HP>
+        <SPEED>20ft.</SPEED>
+        <SIZE>Medium</SIZE>
+        <HEIGHT>4mts.</HEIGHT>
+        <WEIGHT>140kg.</WEIGHT>
+        <STR>16</STR>
+        <STRMOD>+3</STRMOD>
+        <DEX>8</DEX>
+        <DEXMOD>-1 </DEXMOD>
+        <CON>15</CON>
+        <CONMOD>+2</CONMOD>
+        <INT>2</INT>
+        <INTMOD>-4 </INTMOD>
+        <WIS>8</WIS>
+        <WISMOD>-1 </WISMOD>
+        <CHR>7</CHR>
+        <CHRMOD>-2 </CHRMOD>
+        <SKILL>.</SKILL>
+        <SENSES>Darkvision 60 Ft., passive Perception 9</SENSES>
+        <CHALLENGE>3 (700 XP).</CHALLENGE>
+        <POWER_1>Petrifying Gaze. If a creature starts its turn within 30 ft. of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the greater restoration spell or other magic.</POWER_1>
+        <POWER_2>A creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again. If it looks at the basilisk in the meantime, it must immediately make the save.</POWER_2>
+        <POWER_3>If the basilisk sees its reflection within 30 ft. of it in bright light, it mistakes itself for a rival and targets itself with its gaze.</POWER_3>
+        <POWER_4>.</POWER_4>
+        <ACTION_DES>.</ACTION_DES>
+        <ATTACK>5</ATTACK>
+        <ACTION_1>Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: (2d6 + 3) piercing damage plus (2d6)poison damage. </ACTION_1>
+        <ACTIONDADOS_1>4</ACTIONDADOS_1>
+        <ACTIONVALOR_1>6</ACTIONVALOR_1>
+        <ACTIONMODI_1>3</ACTIONMODI_1>
+        <ACTION_2>.</ACTION_2>
+        <ACTIONDADOS_2>.</ACTIONDADOS_2>
+        <ACTIONVALOR_2>.</ACTIONVALOR_2>
+        <ACTIONMODI_2>.</ACTIONMODI_2>
+        <ACTION_3>.</ACTION_3>
+        <ACTIONDADOS_3>.</ACTIONDADOS_3>
+        <ACTIONVALOR_3>.</ACTIONVALOR_3>
+        <ACTIONMODI_3>.</ACTIONMODI_3>
+        <ACTION_4>.</ACTION_4>
+        <ACTIONDADOS_4>.</ACTIONDADOS_4>
+        <ACTIONVALOR_4>.</ACTIONVALOR_4>
+        <ACTIONMODI_4>.</ACTIONMODI_4>
+    </BICHO>
+    <BICHO>
+        <NAME>Behir</NAME>
+        <ALIGNMENT>.</ALIGNMENT>
+        <AC>.</AC>
+        <HP>.</HP>
+        <SPEED>.</SPEED>
+        <SIZE>.</SIZE>
+        <HEIGHT>.</HEIGHT>
+        <WEIGHT>.</WEIGHT>
+        <STR>.</STR>
+        <STRMOD>.</STRMOD>
+        <DEX>.</DEX>
+        <DEXMOD>.</DEXMOD>
+        <CON>.</CON>
+        <CONMOD>.</CONMOD>
+        <INT>.</INT>
+        <INTMOD>.</INTMOD>
+        <WIS>.</WIS>
+        <WISMOD>.</WISMOD>
+        <CHR>.</CHR>
+        <CHRMOD>.</CHRMOD>
+        <SKILL>.</SKILL>
+        <SENSES>.</SENSES>
+        <CHALLENGE>.</CHALLENGE>
+        <POWER_1>.</POWER_1>
+        <POWER_2>.</POWER_2>
+        <POWER_3>.</POWER_3>
+        <POWER_4>.</POWER_4>
+        <ACTION_DES>.</ACTION_DES>
+        <ATTACK>.</ATTACK>
+        <ACTION_1>.</ACTION_1>
+        <ACTIONDADOS_1>.</ACTIONDADOS_1>
+        <ACTIONVALOR_1>.</ACTIONVALOR_1>
+        <ACTIONMODI_1>.</ACTIONMODI_1>
+        <ACTION_2>.</ACTION_2>
+        <ACTIONDADOS_2>.</ACTIONDADOS_2>
+        <ACTIONVALOR_2>.</ACTIONVALOR_2>
+        <ACTIONMODI_2>.</ACTIONMODI_2>
+        <ACTION_3>.</ACTION_3>
+        <ACTIONDADOS_3>.</ACTIONDADOS_3>
+        <ACTIONVALOR_3>.</ACTIONVALOR_3>
+        <ACTIONMODI_3>.</ACTIONMODI_3>
+        <ACTION_4>.</ACTION_4>
+        <ACTIONDADOS_4>.</ACTIONDADOS_4>
+        <ACTIONVALOR_4>.</ACTIONVALOR_4>
+        <ACTIONMODI_4>.</ACTIONMODI_4>
+    </BICHO>
+    <BICHO>
         <NAME>.</NAME>
         <ALIGNMENT>.</ALIGNMENT>
         <AC>.</AC>
