@@ -81,7 +81,7 @@
         <ACTIONDADOS_1>1</ACTIONDADOS_1>
         <ACTIONVALOR_1>4</ACTIONVALOR_1>
         <ACTIONMODI_1>2</ACTIONMODI_1>
-        <ACTION_2>avelin. Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</ACTION_2>
+        <ACTION_2>Javelin. Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage.</ACTION_2>
         <ACTIONDADOS_2>1</ACTIONDADOS_2>
         <ACTIONVALOR_2>6</ACTIONVALOR_2>
         <ACTIONMODI_2>2</ACTIONMODI_2>
@@ -95,44 +95,44 @@
         <ACTIONMODI_4>.</ACTIONMODI_4>
     </BICHO>
     <BICHO>
-        <NAME>.</NAME>
-        <ALIGNMENT>.</ALIGNMENT>
-        <AC>.</AC>
-        <HP>.</HP>
-        <SPEED>.</SPEED>
-        <SIZE>.</SIZE>
-        <HEIGHT>.</HEIGHT>
-        <WEIGHT>.</WEIGHT>
-        <STR>.</STR>
-        <STRMOD>.</STRMOD>
-        <DEX>.</DEX>
-        <DEXMOD>.</DEXMOD>
-        <CON>.</CON>
-        <CONMOD>.</CONMOD>
-        <INT>.</INT>
-        <INTMOD>.</INTMOD>
-        <WIS>.</WIS>
-        <WISMOD>.</WISMOD>
-        <CHR>.</CHR>
-        <CHRMOD>.</CHRMOD>
-        <SKILL>.</SKILL>
-        <SENSES>.</SENSES>
-        <CHALLENGE>.</CHALLENGE>
-        <POWER_1>.</POWER_1>
-        <POWER_2>.</POWER_2>
-        <POWER_3>.</POWER_3>
-        <POWER_4>.</POWER_4>
-        <ACTION_DES>.</ACTION_DES>
-        <ATTACK>.</ATTACK>
-        <ACTION_1>.</ACTION_1>
-        <ACTIONDADOS_1>.</ACTIONDADOS_1>
-        <ACTIONVALOR_1>.</ACTIONVALOR_1>
-        <ACTIONMODI_1>.</ACTIONMODI_1>
-        <ACTION_2>.</ACTION_2>
-        <ACTIONDADOS_2>.</ACTIONDADOS_2>
-        <ACTIONVALOR_2>.</ACTIONVALOR_2>
-        <ACTIONMODI_2>.</ACTIONMODI_2>
-        <ACTION_3>.</ACTION_3>
+        <NAME>Aboleth</NAME>
+        <ALIGNMENT>LE</ALIGNMENT>
+        <AC>17</AC>
+        <HP>135 (18d10+36).</HP>
+        <SPEED>10ft. swim 40ft.</SPEED>
+        <SIZE>Large.</SIZE>
+        <HEIGHT>6.1m</HEIGHT>
+        <WEIGHT>2900k.</WEIGHT>
+        <STR>21</STR>
+        <STRMOD>+5</STRMOD>
+        <DEX>9</DEX>
+        <DEXMOD>-1 </DEXMOD>
+        <CON>15</CON>
+        <CONMOD>+2</CONMOD>
+        <INT>18</INT>
+        <INTMOD>+4</INTMOD>
+        <WIS>15</WIS>
+        <WISMOD>+2</WISMOD>
+        <CHR>18</CHR>
+        <CHRMOD>+4</CHRMOD>
+        <SKILL>History +12, Perception +10</SKILL>
+        <SENSES>darkvision 120ft., passive Perception 20. Telepathy 120ft.</SENSES>
+        <CHALLENGE>10 (5.900XP)</CHALLENGE>
+        <POWER_1>Amphibious. The aboleth can breathe air and water.</POWER_1>
+        <POWER_2>Mucous Cloud. While underwater, the a boleth is s urrounded by transformative mucus. A creature that touches the aboleth or that hits it with a melee attack while within 5 feet of it must make a DC 14 Constitution saving throw. On a failure, the creature is diseased for 1d4 hours. The diseased creature can breathe only underwater.</POWER_2>
+        <POWER_3>Probing Telepathy. If a creature communicates telepathically with the aboleth, the abo leth learns the creature's greatest desires if the a boleth can see the creature.</POWER_3>
+        <POWER_4>The aboleth can take 3 legendary actions. Only one legendary action option can be used at a time and only at the end of another creat ure's turn. The aboleth regains s pent legendary actions at the start of its turn. Detect. The a boleth makes a Wisdom (Perce ption) check. Tail Swipe. The a boleth makes o ne tail attack. Psychic Drain (Costs 2 Actions). One creature charmed by the aboleth t akes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.</POWER_4>
+        <ACTION_DES>Multiattack. The aboleth makes three tentacle attacks.</ACTION_DES>
+        <ATTACK>9</ATTACK>
+        <ACTION_1>Tentacle: Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become Diseased. The disease has no Effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the Diseased creature's skin becomes translucent and slimy, the creature can't regain Hit Points unless it is Underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 6 (1d12) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.</ACTION_1>
+        <ACTIONDADOS_1>2</ACTIONDADOS_1>
+        <ACTIONVALOR_1>6</ACTIONVALOR_1>
+        <ACTIONMODI_1>5</ACTIONMODI_1>
+        <ACTION_2>Tail: Melee Weapon Attack: +9 to hit, reach 10 ft. one target. Hit: 15 (3d6 + 5) bludgeoning damage.</ACTION_2>
+        <ACTIONDADOS_2>3</ACTIONDADOS_2>
+        <ACTIONVALOR_2>6</ACTIONVALOR_2>
+        <ACTIONMODI_2>5</ACTIONMODI_2>
+        <ACTION_3>Enslave (3/day): The aboleth Targets one creature it can see within 30 ft. of it. The target must succeed on a DC 14 Wisdom saving throw or be magically Charmed by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The Charmed target is under the aboleth's control and can't take Reactions, and the aboleth and the target can communicate telepathically with each other over any distance. Whenever the Charmed target takes damage, the target can repeat the saving throw. On a success, the Effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth.</ACTION_3>
         <ACTIONDADOS_3>.</ACTIONDADOS_3>
         <ACTIONVALOR_3>.</ACTIONVALOR_3>
         <ACTIONMODI_3>.</ACTIONMODI_3>
