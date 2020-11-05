@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mostros</title>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://dantezunino.github.io/mostros/mostros.css">
+      <script src="https://dantezunino.github.io/mostros/mostroscript.js"></script>    
+</head>
+<body style="background-color: mistyrose;">
+
+<div class="busquero">
+    <input id="listero" type="button" onclick="desplegar()" value="Lista">
+    <input id="select_monster" style="flex-grow: 6;" type="text" onclick="mostrar()" onkeyup="sugestions()" placeholder="Dragon…">
+    <input id= "boton" type="button" style="flex-grow: 2;" onclick="loadDoc2()">
+    </div>
+    <div class="dropdown">
+    <div id="myDropdown" class="dropdown-content">
+        <a onclick="replace(this)">Ettercap</a>
+        <a onclick="replace(this)">Aarakocra</a>
+        <a onclick="replace(this)">Aboleth</a>
+        <a onclick="replace(this)">Deva</a>
+        <a onclick="replace(this)">Planetar</a>
+        <a onclick="replace(this)">Solar</a>
+        <a onclick="replace(this)">Animated Armor</a>
+        <a onclick="replace(this)">Flying Sword</a>
+        <a onclick="replace(this)">Rug of Smothering</a>
+        <a onclick="replace(this)">Ankheg</a>
+        <a onclick="replace(this)">Azer</a>
+        <a onclick="replace(this)">Banshee</a>
+        <a onclick="replace(this)">Basilisk</a>
+        <a onclick="replace(this)">Behir</a>
+    </div>
+    </div>
+
+
+<div class="evenBigger" onclick="esconder()">
+<div class="superContainer">
+<div class="container">
+    <div><table id="str_mostro"></table></div>
+    <div><table id="dex_mostro"></table></div>
+    <div><table id="con_mostro"></table></div>
+    <div><table id="int_mostro"></table></div>
+    <div><table id="wis_mostro"></table></div>
+    <div><table id="chr_mostro"></table></div>
+</div>
+<div class="containerMod">
+    <div><table id="str_mod"></table></div>
+    <div><table id="dex_mod"></table></div>
+    <div><table id="con_mod"></table></div>
+    <div><table id="int_mod"></table></div>
+    <div><table id="wis_mod"></table></div>
+    <div><table id="chr_mod"></table></div>
+</div>
+</div>
+<div class="container2">
+    <div class="col2">
+        <div id="nombre_mostro"></div>
+        <div id="align_mostro"></div>
+        <div id="ac_mostro"></div>
+        <div id="hp_mostro"></div>
+        <div id="speed_mostro"></div>
+        <div id="size_mostro"></div>
+        <div id="height_mostro"></div>
+        <div id="weight_mostro"></div>
+        <div id="challenge_mostro"></div>
+    </div>
+    <div class="col3">
+        <div id="skill1_mostro"></div>
+        <div id="skill2_mostro"></div>
+        <div id="skill3_mostro"></div>
+        <div id="skill4_mostro"></div>
+    </div>
+
+<div class="salvation1">
+    <div id="savethrow_mostroSTR"><input type="button" value="STR" onclick="str()"><div id="strSave"></div></div>
+    <div id="savethrow_mostroDEX"><input type="button" value="DEX" onclick="dex()"><div id="dexSave"></div></div>
+    <div id="savethrow_mostroCON"><input type="button" value="CON" onclick="con()"><div id="conSave"></div></div>
+    <div id="savethrow_mostroINT"><input type="button" value="INT" onclick="int()"><div id="intSave"></div></div>
+    <div id="savethrow_mostroWIS"><input type="button" value="WIS" onclick="wis()"><div id="wisSave"></div></div>
+    <div id="savethrow_mostroCHR"><input type="button" value="CHR" onclick="chr()"><div id="chrSave"></div></div>
+</div>
+</div>
+<div class="bigBottom">
+<div class="col4">
+    <div id="attackDes_mostro"></div>
+    <div id="attack1_mostro"></div>
+    <div id="attack2_mostro"></div>
+    <div id="attack3_mostro"></div>
+    <div id="attack4_mostro"></div>
+</div>
+<div class="salvation2">
+    <div id="atk1"><input type="button" value="Attack 1" onclick="atk1()"><div id="tk1"></div></div>
+    <div id="atk2"><input type="button" value="Attack 2" onclick="atk2()"><div id="tk2"></div></div>
+    <div id="atk3"><input type="button" value="Attack 3" onclick="atk3()"><div id="tk3"></div></div>
+    <div id="atk4"><input type="button" value="Attack 4" onclick="atk4()"><div id="tk4"></div></div>
+    <div class="estoyharto"><div id="ataque"><input id="rollero" type="button" value="Roll" onclick="rollAttack()"></div><div id="rolly"></div></div>
+        
+</div>
+</div>
+
+</div>
+
+<div id="invisible">
+    <div id="rollMod"></div>
+    <div id="dado_attack_1"></div><div id="valor_attack_1"></div><div id="modi_attack_1"></div>
+    <div id="dado_attack_2"></div><div id="valor_attack_2"></div><div id="modi_attack_2"></div>
+    <div id="dado_attack_3"></div><div id="valor_attack_3"></div><div id="modi_attack_3"></div>
+    <div id="dado_attack_4"></div><div id="valor_attack_4"></div><div id="modi_attack_4"></div>
+</div>
+
+</body>
+</html>
