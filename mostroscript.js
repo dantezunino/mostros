@@ -207,7 +207,7 @@ function loadDoc2() {
 function nave(xml){
   var xmlDoc = xml.responseXML;
   var inputo = document.getElementById("select_monster").value;
-    for(var i=0; i<14; i++)    {
+    for(var i=0; i<19; i++)    {
       if(xmlDoc.getElementsByTagName("BICHO")[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue === inputo){
         monster = i;
       };
@@ -249,4 +249,14 @@ function esconder(){
 //Declare list element as input value
 function replace(h){
   document.getElementById("select_monster").value = h.innerHTML;
+}
+
+//Reset button
+function reseti(){
+  document.getElementById("strSave").innerHTML = "";
+  document.getElementById("dexSave").innerHTML = "";
+  document.getElementById("conSave").innerHTML = "";
+  document.getElementById("intSave").innerHTML = "";
+  document.getElementById("wisSave").innerHTML = "";
+  document.getElementById("chrSave").innerHTML = "";
 }
