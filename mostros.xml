@@ -613,147 +613,194 @@
     </BICHO>
     <BICHO>
         <NAME>Behir</NAME>
-        <ALIGNMENT>.</ALIGNMENT>
-        <AC>.</AC>
-        <HP>.</HP>
-        <SPEED>.</SPEED>
-        <SIZE>.</SIZE>
-        <HEIGHT>.</HEIGHT>
-        <WEIGHT>.</WEIGHT>
-        <STR>.</STR>
-        <STRMOD>.</STRMOD>
-        <DEX>.</DEX>
-        <DEXMOD>.</DEXMOD>
-        <CON>.</CON>
-        <CONMOD>.</CONMOD>
-        <INT>.</INT>
-        <INTMOD>.</INTMOD>
-        <WIS>.</WIS>
-        <WISMOD>.</WISMOD>
-        <CHR>.</CHR>
-        <CHRMOD>.</CHRMOD>
-        <SKILL>.</SKILL>
-        <SENSES>.</SENSES>
-        <CHALLENGE>.</CHALLENGE>
+        <ALIGNMENT>NE</ALIGNMENT>
+        <AC>17</AC>
+        <HP>168 (16d12+64)</HP>
+        <SPEED>50ft. climb 40ft.</SPEED>
+        <SIZE>Huge</SIZE>
+        <HEIGHT>12mts</HEIGHT>
+        <WEIGHT>1800kg</WEIGHT>
+        <STR>23</STR>
+        <STRMOD>+6</STRMOD>
+        <DEX>16</DEX>
+        <DEXMOD>+3</DEXMOD>
+        <CON>18</CON>
+        <CONMOD>+4</CONMOD>
+        <INT>7</INT>
+        <INTMOD>-2 </INTMOD>
+        <WIS>14</WIS>
+        <WISMOD>+2</WISMOD>
+        <CHR>12</CHR>
+        <CHRMOD>+1</CHRMOD>
+        <SKILL>Perception +6, Stealth +7</SKILL>
+        <SENSES>Darkvision 90 Ft., passive Perception 16</SENSES>
+        <CHALLENGE>11 (7,200 XP)</CHALLENGE>
         <POWER_1>.</POWER_1>
         <POWER_2>.</POWER_2>
         <POWER_3>.</POWER_3>
-        <POWER_4>.</POWER_4>
-        <ACTION_DES>.</ACTION_DES>
-        <ATTACK>.</ATTACK>
-        <ACTION_1>.</ACTION_1>
-        <ACTIONDADOS_1>.</ACTIONDADOS_1>
-        <ACTIONVALOR_1>.</ACTIONVALOR_1>
-        <ACTIONMODI_1>.</ACTIONMODI_1>
-        <ACTION_2>.</ACTION_2>
+        <POWER_4>Swallow. The behir makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the behir, and it takes 21 (6d6) acid damage at the start of each of the behir's turns. A behir can have only one creature swallowed at a time. If the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 ft. of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 ft. of movement, exiting prone.</POWER_4>
+        <ACTION_DES>Multiattack. The behir makes two attacks: one with its bite and one to constrict.</ACTION_DES>
+        <ATTACK>10</ATTACK>
+        <ACTION_1>Bite. Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: (3d10 + 6) piercing damage.</ACTION_1>
+        <ACTIONDADOS_1>3</ACTIONDADOS_1>
+        <ACTIONVALOR_1>10</ACTIONVALOR_1>
+        <ACTIONMODI_1>6</ACTIONMODI_1>
+        <ACTION_2>Constrict. Melee Weapon Attack: +10 to hit, reach 5 ft., one large or smaller creature. Hit: (2d10 + 6) bludgeoning damage plus (2d10 + 6)slashing damage. The target is grappled (escape DC 16) if the behir isn't already constricting a creature, and the target is restrained until this grapple ends</ACTION_2>
+        <ACTIONDADOS_2>4</ACTIONDADOS_2>
+        <ACTIONVALOR_2>10</ACTIONVALOR_2>
+        <ACTIONMODI_2>12</ACTIONMODI_2>
+        <ACTION_3>Lightning Breath (Recharge 5-6). The behir exhales a line of lightning that is 20 ft. long and 5 ft. wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.</ACTION_3>
+        <ACTIONDADOS_3>12</ACTIONDADOS_3>
+        <ACTIONVALOR_3>10</ACTIONVALOR_3>
+        <ACTIONMODI_3>0</ACTIONMODI_3>
+        <ACTION_4>.</ACTION_4>
+        <ACTIONDADOS_4>6</ACTIONDADOS_4>
+        <ACTIONVALOR_4>6</ACTIONVALOR_4>
+        <ACTIONMODI_4>0</ACTIONMODI_4>
+    </BICHO>
+    <BICHO>
+        <NAME>Beholder</NAME>
+        <ALIGNMENT>LE</ALIGNMENT>
+        <AC>18</AC>
+        <HP>180 (19d10+76)</HP>
+        <SPEED>0ft. hovering 20ft.</SPEED>
+        <SIZE>Large</SIZE>
+        <HEIGHT>2.4mts</HEIGHT>
+        <WEIGHT>150kg</WEIGHT>
+        <STR>10</STR>
+        <STRMOD>0</STRMOD>
+        <DEX>14</DEX>
+        <DEXMOD>+2</DEXMOD>
+        <CON>18</CON>
+        <CONMOD>+4</CONMOD>
+        <INT>17</INT>
+        <INTMOD>+3</INTMOD>
+        <WIS>15</WIS>
+        <WISMOD>+2</WISMOD>
+        <CHR>17</CHR>
+        <CHRMOD>+3</CHRMOD>
+        <SKILL>Perception +12</SKILL>
+        <SENSES>darkvision 120ft. passive Perception 22.</SENSES>
+        <CHALLENGE>13 (10.000 XP)</CHALLENGE>
+        <POWER_1>Antimagic Cone. The beholder's central eye creates an area of antimagic, as in the antimagic field spell, in a 150-foot cone. At the start of each of its turns, the beholder decides which way the cone faces and whether the cone is active. The area works against the beholder's own eye rays. </POWER_1>
+        <POWER_2>Paralyzing Ray. The targeted creature must succeed on a DC 16 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Sleep Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.</POWER_2>
+        <POWER_3>Charm Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or be charmed by the beholder for 1 hour, or until the beholder harms the creature. Fear Ray. The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</POWER_3>
+        <POWER_4>Slowing Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect 0n itself on a success.</POWER_4>
+        <ACTION_DES>Eye Rays. The beholder shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it. The beholder can take legendary actions: using a random eye ray.</ACTION_DES>
+        <ATTACK>5</ATTACK>
+        <ACTION_1>Enervation Ray. The targeted creature must  make a DC 16 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one.</ACTION_1>
+        <ACTIONDADOS_1>8</ACTIONDADOS_1>
+        <ACTIONVALOR_1>8</ACTIONVALOR_1>
+        <ACTIONMODI_1>0</ACTIONMODI_1>
+        <ACTION_2>Disintegration Ray. If the target is a creature, it must succeed on a DC 16 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, its  body becomes a pile of fine gray dust. If the target is a Large or smaller non magical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.</ACTION_2>
+        <ACTIONDADOS_2>10</ACTIONDADOS_2>
+        <ACTIONVALOR_2>8</ACTIONVALOR_2>
+        <ACTIONMODI_2>0</ACTIONMODI_2>
+        <ACTION_3>Death Ray. The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (10d10) necrotic damage. The target dies if the ray reduces it to 0 hit points. Telekinetic Ray. If the target is a creature, it must succeed on a DC 16 Strength saving throw or the beholder moves it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.</ACTION_3>
+        <ACTIONDADOS_3>10</ACTIONDADOS_3>
+        <ACTIONVALOR_3>10</ACTIONVALOR_3>
+        <ACTIONMODI_3>0</ACTIONMODI_3>
+        <ACTION_4>Petrification Ray. The targeted creature must make a DC 16 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must  repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is  petrified until freed by the greater rest.oration spell or other magic. Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 14 (4d6) piercing damage.</ACTION_4>
+        <ACTIONDADOS_4>4</ACTIONDADOS_4>
+        <ACTIONVALOR_4>6</ACTIONVALOR_4>
+        <ACTIONMODI_4>0</ACTIONMODI_4>
+    </BICHO>
+    <BICHO>
+        <NAME>Death Tyrant</NAME>
+        <ALIGNMENT>LE</ALIGNMENT>
+        <AC>19</AC>
+        <HP>187 (25d10+50)</HP>
+        <SPEED>0ft. hovering 20ft.</SPEED>
+        <SIZE>Large</SIZE>
+        <HEIGHT>2.4mts</HEIGHT>
+        <WEIGHT>150kg</WEIGHT>
+        <STR>10</STR>
+        <STRMOD>0</STRMOD>
+        <DEX>14</DEX>
+        <DEXMOD>+2</DEXMOD>
+        <CON>14</CON>
+        <CONMOD>+2</CONMOD>
+        <INT>19</INT>
+        <INTMOD>+4</INTMOD>
+        <WIS>15</WIS>
+        <WISMOD>+2</WISMOD>
+        <CHR>19</CHR>
+        <CHRMOD>+4</CHRMOD>
+        <SKILL>Perception +12</SKILL>
+        <SENSES>darkvision 120ft. passive Perception 22.</SENSES>
+        <CHALLENGE>14 (11.500 XP)</CHALLENGE>
+        <POWER_1>Negative Energy Cone. The death tyrant's central eye emits an invisible, magical 150-foot cone of negative energy. At the start of each of its turns, the tyrant decides which way the cone faces and whether the cone is active. Any creature in that area can't regain hit points. Any humanoid that dies there becomes a zombie under the tyrant's command. The dead humanoid retains its place in the initiative order and animates at the start of its next turn, provided that its body hasn't been completely destroyed.</POWER_1>
+        <POWER_2>Paralyzing Ray. The targeted creature must succeed on a DC 17 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Sleep Ray. The targeted creature must succeed on a DC 17 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.</POWER_2>
+        <POWER_3>Charm Ray. The targeted creature must succeed on a DC 17 Wisdom saving throw or be charmed by the beholder for 1 hour, or until the beholder harms the creature. Fear Ray. The targeted creature must succeed on a DC 17 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</POWER_3>
+        <POWER_4>Slowing Ray. The targeted creature must succeed on a DC 17 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect 0n itself on a success.</POWER_4>
+        <ACTION_DES>Eye Rays. The beholder shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it. The beholder can take legendary actions: using a random eye ray.</ACTION_DES>
+        <ATTACK>5</ATTACK>
+        <ACTION_1>Enervation Ray. The targeted creature must  make a DC 17 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one.</ACTION_1>
+        <ACTIONDADOS_1>8</ACTIONDADOS_1>
+        <ACTIONVALOR_1>8</ACTIONVALOR_1>
+        <ACTIONMODI_1>0</ACTIONMODI_1>
+        <ACTION_2>Disintegration Ray. If the target is a creature, it must succeed on a DC 17 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, its  body becomes a pile of fine gray dust. If the target is a Large or smaller non magical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.</ACTION_2>
+        <ACTIONDADOS_2>10</ACTIONDADOS_2>
+        <ACTIONVALOR_2>8</ACTIONVALOR_2>
+        <ACTIONMODI_2>0</ACTIONMODI_2>
+        <ACTION_3>Death Ray. The targeted creature must succeed on a DC 17 Dexterity saving throw or take 55 (10d10) necrotic damage. The target dies if the ray reduces it to 0 hit points. Telekinetic Ray. If the target is a creature, it must succeed on a DC 16 Strength saving throw or the beholder moves it up to 30 feet in any direction. It is restrained by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.</ACTION_3>
+        <ACTIONDADOS_3>10</ACTIONDADOS_3>
+        <ACTIONVALOR_3>10</ACTIONVALOR_3>
+        <ACTIONMODI_3>0</ACTIONMODI_3>
+        <ACTION_4>Petrification Ray. The targeted creature must make a DC 17 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must  repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is  petrified until freed by the greater rest.oration spell or other magic. Bite. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 14 (4d6) piercing damage.</ACTION_4>
+        <ACTIONDADOS_4>4</ACTIONDADOS_4>
+        <ACTIONVALOR_4>6</ACTIONVALOR_4>
+        <ACTIONMODI_4>0</ACTIONMODI_4>
+    </BICHO>
+    <BICHO>
+        <NAME>Spectator</NAME>
+        <ALIGNMENT>LN</ALIGNMENT>
+        <AC>14</AC>
+        <HP>39 (6d8+12)</HP>
+        <SPEED>0ft. hover 30ft.</SPEED>
+        <SIZE>Medium</SIZE>
+        <HEIGHT>1.7mts</HEIGHT>
+        <WEIGHT>70kg</WEIGHT>
+        <STR>8</STR>
+        <STRMOD>-1 </STRMOD>
+        <DEX>14</DEX>
+        <DEXMOD>+2</DEXMOD>
+        <CON>14</CON>
+        <CONMOD>+2</CONMOD>
+        <INT>13</INT>
+        <INTMOD>+1</INTMOD>
+        <WIS>14</WIS>
+        <WISMOD>+2</WISMOD>
+        <CHR>11</CHR>
+        <CHRMOD>0</CHRMOD>
+        <SKILL>Perception +6</SKILL>
+        <SENSES>Darkvision 120 ft., Passive Perception 16</SENSES>
+        <CHALLENGE>3 (700 XP)</CHALLENGE>
+        <POWER_1>Confusion Ray. The target must succeed on a DC 13 Wisdom saving throw, or it can’t take reactions until the end of its next turn. On its turn, the target can’t move, and it uses its action to make a melee or ranged attack against a randomly determined creature within range. If the target can’t attack, it does nothing on its turn.</POWER_1>
+        <POWER_2>Paralyzing Ray. The target must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</POWER_2>
+        <POWER_3>Create Food and Water. The spectator magically creates enough food and water to sustain itself for 24 hours.</POWER_3>
+        <POWER_4>Spell Reflection. If the spectator makes a successful saving throw against a spell, or a spell attack misses it, the spectator can choose another creature (including the spellcaster) it can see within 30 feet of it. The spell targets the chosen creature instead of the spectator. If the spell forced a saving throw, the chosen creature makes its own save. If the spell was an attack, the attack roll is rerolled against the chosen creature.</POWER_4>
+        <ACTION_DES>Eye Rays. The spectator shoots up to two of the following magical eye rays at one or two creatures it can see within 90 feet of it. It can use each ray only once on a turn.</ACTION_DES>
+        <ATTACK>1</ATTACK>
+        <ACTION_1>Bite. Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 2 (1d6 − 1) piercing damage.</ACTION_1>
+        <ACTIONDADOS_1>1</ACTIONDADOS_1>
+        <ACTIONVALOR_1>6</ACTIONVALOR_1>
+        <ACTIONMODI_1>-1</ACTIONMODI_1>
+        <ACTION_2>Fear Ray. The target must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the spectator is visible to the target, ending the effect on itself on a success.</ACTION_2>
         <ACTIONDADOS_2>.</ACTIONDADOS_2>
         <ACTIONVALOR_2>.</ACTIONVALOR_2>
         <ACTIONMODI_2>.</ACTIONMODI_2>
-        <ACTION_3>.</ACTION_3>
-        <ACTIONDADOS_3>.</ACTIONDADOS_3>
-        <ACTIONVALOR_3>.</ACTIONVALOR_3>
-        <ACTIONMODI_3>.</ACTIONMODI_3>
+        <ACTION_3>Wounding Ray. The target must make a DC 13 Constitution saving throw, taking 16 (3d10) necrotic damage on a failed save, or half as much damage on a successful one.</ACTION_3>
+        <ACTIONDADOS_3>3</ACTIONDADOS_3>
+        <ACTIONVALOR_3>10</ACTIONVALOR_3>
+        <ACTIONMODI_3>0</ACTIONMODI_3>
         <ACTION_4>.</ACTION_4>
         <ACTIONDADOS_4>.</ACTIONDADOS_4>
         <ACTIONVALOR_4>.</ACTIONVALOR_4>
         <ACTIONMODI_4>.</ACTIONMODI_4>
     </BICHO>
     <BICHO>
-        <NAME>.</NAME>
-        <ALIGNMENT>.</ALIGNMENT>
-        <AC>.</AC>
-        <HP>.</HP>
-        <SPEED>.</SPEED>
-        <SIZE>.</SIZE>
-        <HEIGHT>.</HEIGHT>
-        <WEIGHT>.</WEIGHT>
-        <STR>.</STR>
-        <STRMOD>.</STRMOD>
-        <DEX>.</DEX>
-        <DEXMOD>.</DEXMOD>
-        <CON>.</CON>
-        <CONMOD>.</CONMOD>
-        <INT>.</INT>
-        <INTMOD>.</INTMOD>
-        <WIS>.</WIS>
-        <WISMOD>.</WISMOD>
-        <CHR>.</CHR>
-        <CHRMOD>.</CHRMOD>
-        <SKILL>.</SKILL>
-        <SENSES>.</SENSES>
-        <CHALLENGE>.</CHALLENGE>
-        <POWER_1>.</POWER_1>
-        <POWER_2>.</POWER_2>
-        <POWER_3>.</POWER_3>
-        <POWER_4>.</POWER_4>
-        <ACTION_DES>.</ACTION_DES>
-        <ATTACK>.</ATTACK>
-        <ACTION_1>.</ACTION_1>
-        <ACTIONDADOS_1>.</ACTIONDADOS_1>
-        <ACTIONVALOR_1>.</ACTIONVALOR_1>
-        <ACTIONMODI_1>.</ACTIONMODI_1>
-        <ACTION_2>.</ACTION_2>
-        <ACTIONDADOS_2>.</ACTIONDADOS_2>
-        <ACTIONVALOR_2>.</ACTIONVALOR_2>
-        <ACTIONMODI_2>.</ACTIONMODI_2>
-        <ACTION_3>.</ACTION_3>
-        <ACTIONDADOS_3>.</ACTIONDADOS_3>
-        <ACTIONVALOR_3>.</ACTIONVALOR_3>
-        <ACTIONMODI_3>.</ACTIONMODI_3>
-        <ACTION_4>.</ACTION_4>
-        <ACTIONDADOS_4>.</ACTIONDADOS_4>
-        <ACTIONVALOR_4>.</ACTIONVALOR_4>
-        <ACTIONMODI_4>.</ACTIONMODI_4>
-    </BICHO>
-    <BICHO>
-        <NAME>.</NAME>
-        <ALIGNMENT>.</ALIGNMENT>
-        <AC>.</AC>
-        <HP>.</HP>
-        <SPEED>.</SPEED>
-        <SIZE>.</SIZE>
-        <HEIGHT>.</HEIGHT>
-        <WEIGHT>.</WEIGHT>
-        <STR>.</STR>
-        <STRMOD>.</STRMOD>
-        <DEX>.</DEX>
-        <DEXMOD>.</DEXMOD>
-        <CON>.</CON>
-        <CONMOD>.</CONMOD>
-        <INT>.</INT>
-        <INTMOD>.</INTMOD>
-        <WIS>.</WIS>
-        <WISMOD>.</WISMOD>
-        <CHR>.</CHR>
-        <CHRMOD>.</CHRMOD>
-        <SKILL>.</SKILL>
-        <SENSES>.</SENSES>
-        <CHALLENGE>.</CHALLENGE>
-        <POWER_1>.</POWER_1>
-        <POWER_2>.</POWER_2>
-        <POWER_3>.</POWER_3>
-        <POWER_4>.</POWER_4>
-        <ACTION_DES>.</ACTION_DES>
-        <ATTACK>.</ATTACK>
-        <ACTION_1>.</ACTION_1>
-        <ACTIONDADOS_1>.</ACTIONDADOS_1>
-        <ACTIONVALOR_1>.</ACTIONVALOR_1>
-        <ACTIONMODI_1>.</ACTIONMODI_1>
-        <ACTION_2>.</ACTION_2>
-        <ACTIONDADOS_2>.</ACTIONDADOS_2>
-        <ACTIONVALOR_2>.</ACTIONVALOR_2>
-        <ACTIONMODI_2>.</ACTIONMODI_2>
-        <ACTION_3>.</ACTION_3>
-        <ACTIONDADOS_3>.</ACTIONDADOS_3>
-        <ACTIONVALOR_3>.</ACTIONVALOR_3>
-        <ACTIONMODI_3>.</ACTIONMODI_3>
-        <ACTION_4>.</ACTION_4>
-        <ACTIONDADOS_4>.</ACTIONDADOS_4>
-        <ACTIONVALOR_4>.</ACTIONVALOR_4>
-        <ACTIONMODI_4>.</ACTIONMODI_4>
-    </BICHO>
-    <BICHO>
-        <NAME>.</NAME>
+        <NAME>BLIGHTS</NAME>
         <ALIGNMENT>.</ALIGNMENT>
         <AC>.</AC>
         <HP>.</HP>
