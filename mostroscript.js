@@ -23,12 +23,12 @@ function myFunction(xml) {
     var x = xmlDoc.getElementsByTagName("BICHO")[monster];
   //take XML values, put them in the HTML
   //Stats
-    document.getElementById("str_mostro").innerHTML = "STR<br>" + x.getElementsByTagName("STR")[0].childNodes[0].nodeValue;
-    document.getElementById("dex_mostro").innerHTML = "DEX<br>" + x.getElementsByTagName("DEX")[0].childNodes[0].nodeValue;
-    document.getElementById("con_mostro").innerHTML = "CON<br>" + x.getElementsByTagName("CON")[0].childNodes[0].nodeValue;
-    document.getElementById("int_mostro").innerHTML = "INT<br>" + x.getElementsByTagName("INT")[0].childNodes[0].nodeValue;
-    document.getElementById("wis_mostro").innerHTML = "WIS<br>" + x.getElementsByTagName("WIS")[0].childNodes[0].nodeValue;
-    document.getElementById("chr_mostro").innerHTML = "CHR<br>" + x.getElementsByTagName("CHR")[0].childNodes[0].nodeValue;
+    document.getElementById("str_mostro").innerHTML = x.getElementsByTagName("STR")[0].childNodes[0].nodeValue;
+    document.getElementById("dex_mostro").innerHTML = x.getElementsByTagName("DEX")[0].childNodes[0].nodeValue;
+    document.getElementById("con_mostro").innerHTML = x.getElementsByTagName("CON")[0].childNodes[0].nodeValue;
+    document.getElementById("int_mostro").innerHTML = x.getElementsByTagName("INT")[0].childNodes[0].nodeValue;
+    document.getElementById("wis_mostro").innerHTML = x.getElementsByTagName("WIS")[0].childNodes[0].nodeValue;
+    document.getElementById("chr_mostro").innerHTML = x.getElementsByTagName("CHR")[0].childNodes[0].nodeValue;
   //Stats Mods
     document.getElementById("str_mod").innerHTML = x.getElementsByTagName("STRMOD")[0].childNodes[0].nodeValue;
     document.getElementById("dex_mod").innerHTML = x.getElementsByTagName("DEXMOD")[0].childNodes[0].nodeValue;
@@ -39,13 +39,13 @@ function myFunction(xml) {
   //Name, AC and HP and so and so
     document.getElementById("nombre_mostro").innerHTML = x.getElementsByTagName("NAME")[0].childNodes[0].nodeValue;
     document.getElementById("align_mostro").innerHTML = x.getElementsByTagName("ALIGNMENT")[0].childNodes[0].nodeValue;
-    document.getElementById("ac_mostro").innerHTML = "AC: " + x.getElementsByTagName("AC")[0].childNodes[0].nodeValue;
-    document.getElementById("hp_mostro").innerHTML = "HP: " + x.getElementsByTagName("HP")[0].childNodes[0].nodeValue;
-    document.getElementById("speed_mostro").innerHTML = "Speed: " + x.getElementsByTagName("SPEED")[0].childNodes[0].nodeValue;
-    document.getElementById("size_mostro").innerHTML = "Size: " + x.getElementsByTagName("SIZE")[0].childNodes[0].nodeValue;
-    document.getElementById("height_mostro").innerHTML = "Height: " + x.getElementsByTagName("HEIGHT")[0].childNodes[0].nodeValue;
-    document.getElementById("weight_mostro").innerHTML = "Weight: " + x.getElementsByTagName("WEIGHT")[0].childNodes[0].nodeValue;
-    document.getElementById("challenge_mostro").innerHTML = "CR: " + x.getElementsByTagName("CHALLENGE")[0].childNodes[0].nodeValue; 
+    document.getElementById("ac_mostro").innerHTML = x.getElementsByTagName("AC")[0].childNodes[0].nodeValue;
+    document.getElementById("hp_mostro").innerHTML = x.getElementsByTagName("HP")[0].childNodes[0].nodeValue;
+    document.getElementById("speed_mostro").innerHTML = x.getElementsByTagName("SPEED")[0].childNodes[0].nodeValue;
+    document.getElementById("size_mostro").innerHTML = x.getElementsByTagName("SIZE")[0].childNodes[0].nodeValue;
+    document.getElementById("height_mostro").innerHTML = x.getElementsByTagName("HEIGHT")[0].childNodes[0].nodeValue;
+    document.getElementById("weight_mostro").innerHTML = x.getElementsByTagName("WEIGHT")[0].childNodes[0].nodeValue;
+    document.getElementById("challenge_mostro").innerHTML = x.getElementsByTagName("CHALLENGE")[0].childNodes[0].nodeValue; 
   //Habilities and Attacks
   document.getElementById("attack1_mostro").innerHTML = x.getElementsByTagName("ACTION_1")[0].childNodes[0].nodeValue;
   document.getElementById("attack2_mostro").innerHTML = x.getElementsByTagName("ACTION_2")[0].childNodes[0].nodeValue;
@@ -212,7 +212,6 @@ function nave(xml){
         monster = i;
       };
     };
-  esconder();
   loadDoc1();
   
 }
@@ -233,18 +232,6 @@ function sugestions(){
     }
   }
 }
-//Show/Hide list
-function desplegar() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function mostrar(){
-  document.getElementById("myDropdown").classList.add("show");
-}
-
-function esconder(){
-  document.getElementById("myDropdown").classList.remove("show");
-}
 
 //Declare list element as input value
 function replace(h){
@@ -259,4 +246,27 @@ function reseti(){
   document.getElementById("intSave").innerHTML = "";
   document.getElementById("wisSave").innerHTML = "";
   document.getElementById("chrSave").innerHTML = "";
+  document.getElementById("tk1").innerHTML = "";
+  document.getElementById("tk2").innerHTML = "";
+  document.getElementById("tk3").innerHTML = "";
+  document.getElementById("tk4").innerHTML = "";
+  document.getElementById("rolly").innerHTML = "";
 }
+
+function customRoll(){
+  var numero = document.getElementById("dadoInput").value;
+  var tamano = document.getElementById("tamanoInput").value;
+  var modi = document.getElementById("modiInput").value;
+  var numeroReal = numero*1;
+  var tamanoReal = tamano*1;
+  var modiReal = modi*1;
+  var subtotal = 0;
+  for(var i=0; i<numeroReal; i++){
+    var roll = Math.floor((Math.random()*tamanoReal)+1);
+    subtotal += roll;
+  }
+  var total = subtotal + modiReal;
+  document.getElementById("resultadoInput").innerHTML = total;
+}
+
+function enterio(k){if(k.keyCode === 13){loadDoc2()};}

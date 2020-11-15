@@ -1,118 +1,231 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Mostros</title>
-    <meta charset="utf-8">
+    <head>
+      <title>Mostros</title>
+      <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://dantezunino.github.io/mostros/mostros.css">
-      <script src="https://dantezunino.github.io/mostros/mostroscript.js"></script>    
-</head>
-<body style="background-color: mistyrose;">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.css">
+      <script src="https://dantezunino.github.io/mostros/mostroscript.js"></script>
+      <style>
+        #invisible{
+            visibility: hidden;
+            display: flex;
+            flex-direction: row;
+            font-size: 1px;}
+      </style>
+    </head>
+    <body style="background-color: rgba(10, 9, 9, 0.705);">
+        <nav class="navbar is-dark">
+        <div class="container">
+        <div class="navbar-brand">
+        </div>
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <input id="select_monster" class="input is-rounded is-expanded" type="text" placeholder="Dragon..." onkeyup="sugestions()">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Lista</a>
+                        <div id="myDropdown" class="navbar-dropdown">
+                            <a class="navbar-item" onclick="replace(this)">Ettercap</a>
+                            <a class="navbar-item" onclick="replace(this)">Aarakocra</a>
+                            <a class="navbar-item" onclick="replace(this)">Aboleth</a>
+                            <a class="navbar-item" onclick="replace(this)">Deva</a>
+                            <a class="navbar-item" onclick="replace(this)">Planetar</a>
+                            <a class="navbar-item" onclick="replace(this)">Solar</a>
+                            <a class="navbar-item" onclick="replace(this)">Animated Armor</a>
+                            <a class="navbar-item" onclick="replace(this)">Flying Sword</a>
+                            <a class="navbar-item" onclick="replace(this)">Rug of Smothering</a>
+                            <a class="navbar-item" onclick="replace(this)">Ankheg</a>
+                            <a class="navbar-item" onclick="replace(this)">Azer</a>
+                            <a class="navbar-item" onclick="replace(this)">Banshee</a>
+                            <a class="navbar-item" onclick="replace(this)">Basilisk</a>
+                            <a class="navbar-item" onclick="replace(this)">Behir</a>
+                            <a class="navbar-item" onclick="replace(this)">Beholder</a>
+                            <a class="navbar-item" onclick="replace(this)">Death Tyrant</a>
+                            <a class="navbar-item" onclick="replace(this)">Spectator</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <button class="button is-warning is-light" onclick="loadDoc2()">SEARCH MONSTER</button>
+                </div>
+            </div> 
+        </div>  
+        </nav>
+    <main class="container is-fullhd">
+        <div class="columns is-gapless is-mobile">
+            <div class="column" style="vertical-align: bottom;">
+                <div class="box has-background-grey-dark">
+                    <div class="box has-background-grey-dark">
+                    <table class="table is-bordered">
+                        <tr>
+                            <th>STR</th>
+                            <td id="str_mostro" class="has-text-primary-light has-background-dark">a</td>
+                            <td id="str_mod" class="has-text-primary-light has-background-dark">b</td>
+                        </tr>
+                        <tr>
+                            <th>DEX</th>
+                            <td id="dex_mostro" class="has-text-primary-light has-background-dark">a</td>
+                            <td id="dex_mod" class="has-text-primary-light has-background-dark">b</td>
+                        </tr>
+                        <tr>
+                            <th>CON</th>
+                            <td id="con_mostro" class="has-text-primary-light has-background-dark">a</td>
+                            <td id="con_mod" class="has-text-primary-light has-background-dark">b</td>
+                        </tr>
+                        <tr>
+                            <th>INT</th>
+                            <td id="int_mostro" class="has-text-primary-light has-background-dark">a</td>
+                            <td id="int_mod" class="has-text-primary-light has-background-dark">b</td>
+                        </tr>
+                        <tr>
+                            <th>WIS</th>
+                            <td id="wis_mostro" class="has-text-primary-light has-background-dark">a</td>
+                            <td id="wis_mod" class="has-text-primary-light has-background-dark">b</td>
+                        </tr>
+                        <tr>
+                            <th>CHR</th>
+                            <td id="chr_mostro" class="has-text-primary-light has-background-dark">a</td>
+                            <td id="chr_mod" class="has-text-primary-light has-background-dark">b</td>
+                        </tr>
+                    </table>
+                </div>
+                    <div class="box has-background-grey-dark">
+                        <div class="box" id="resultadoInput"></div>
+                        <div class="column">
+                        <input id="dadoInput" class="input is-hovered" type="text" placeholder="1" style="width: 31%;">
+                        <input id="tamanoInput" class="input is-hovered" type="text" placeholder="20" style="width: 31%;">
+                        <input id="modiInput" class="input is-hovered" type="text" placeholder="+4" style="width: 31%;">
+                        </div>
+                        <div class="column">
+                        <button class="button has-background-grey-lighter" onclick="customRoll()" style="width: 100%;">Custom Roll</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box has-background-grey-dark">
+                <div class="box has-background-grey-dark">
+                    <table class="table is-bordered">
+                    <tr ><th>Name</th><td id="nombre_mostro" class="has-text-primary-light has-background-dark"></td></tr>
+                    <tr><th>Align</th><td id="align_mostro" class="has-text-primary-light has-background-dark"></td></tr>
+                    <tr><th>AC</th><td id="ac_mostro" class="has-text-primary-light has-background-dark"></td></tr>
+                    <tr><th>HP</th><td id="hp_mostro" class="has-text-primary-light has-background-dark"></td></tr>
+                    <tr><th>SPEED</th><td id="speed_mostro" class="has-text-primary-light has-background-dark"></td></tr>
+                    <tr><th>SIZE</th><td id="size_mostro" class="has-text-primary-light has-background-dark"></td></tr>
+                    <tr><th>HEIGHT</th><td id="height_mostro" class="has-text-primary-light has-background-dark"></td></tr>
+                    <tr><th>WEIGHT</th><td id="weight_mostro" class="has-text-primary-light has-background-dark"></td></tr>
+                    <tr><th>CHLG</th><td id="challenge_mostro" class="has-text-primary-light has-background-dark"></td></tr>
+                    </table>
+                </div>
+                <div class="box has-background-grey-dark">
+                    <button class="button" onclick="reseti()">RESET</button>
+                </div>
+                </div>
+            </div>
+            <div class="column is-5">
+                <div class="box has-background-grey-dark">
+                    <table class="table is-striped">
+                        <tr><td id="skill1_mostro" class="has-text-primary-light has-background-dark">Habilidad 1</td></tr>
+                        <tr><td id="skill2_mostro" class="has-text-primary-light has-background-dark">Habilidad 2</td></tr>
+                        <tr><td id="skill3_mostro" class="has-text-primary-light has-background-dark">Habilidad 3</td></tr>
+                        <tr><td id="skill4_mostro" class="has-text-primary-light has-background-dark">Habilidad 4</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="column">
+            <div class="box has-background-grey-dark">    
+            <div class="columns">
+                <div class="column">
+                    <div class="box has-background-grey-light">
+                        <div id="strSave" class="box">  </div>
+                        <button class="button is-primary is-active" onclick="str()">STR</button>
+                    </div>
+                    <div class="box has-background-grey-light">
+                        <div id="dexSave" class="box">  </div>
+                        <button class="button is-primary is-active" onclick="dex()">DEX</button>
+                    </div>
+                    <div class="box has-background-grey-light">
+                        <div id="conSave" class="box">  </div>
+                        <button class="button is-primary is-active" onclick="con()">CON</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box has-background-grey-light">
+                        <div id="intSave" class="box">  </div>
+                        <button class="button is-primary is-active" onclick="int()">INT</button>
+                    </div>
+                    <div class="box has-background-grey-light">
+                        <div id="wisSave" class="box">  </div>
+                        <button class="button is-primary is-active" onclick="wis()">WIS</button>
+                    </div>
+                    <div class="box has-background-grey-light">
+                        <div id="chrSave" class="box">  </div>
+                        <button class="button is-primary is-active" onclick="chr()">CHR</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
 
-<div class="busquero">
-    <input id="listero" type="button" onclick="desplegar()" onkeyup="enterio()" value="Lista">
-    <input id="select_monster" style="flex-grow: 6;" type="text" onclick="mostrar()" onkeyup="sugestions()" placeholder="Dragon…">
-    <input id= "boton" type="button" style="flex-grow: 2;" onclick="loadDoc2()">
+        <div class="container is-fullhd">
+            <div class="columns is-gapless is-vcentered">
+                <div class="column is-8">
+                    <div class="box has-text-primary-light has-background-dark">
+                        <table class="table is-striped">
+                            <thead id="attackDes_mostro" class="has-background-success-dark"></thead>
+                            <tr><td id="attack1_mostro" class="has-text-primary-light has-background-dark">Ataque 1</td></tr>
+                            <tr><td id="attack2_mostro" class="has-text-primary-light has-background-dark">Ataque 2</td></tr>
+                            <tr><td id="attack3_mostro" class="has-text-primary-light has-background-dark">Ataque 3</td></tr>
+                            <tr><td id="attack4_mostro" class="has-text-primary-light has-background-dark">Ataque 4</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="box has-background-dark">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="box has-background-grey-light">
+                                    <div id="tk1" class="box">  </div>
+                                    <button class="button is-primary is-active" onclick="atk1()">Attack 1</button>
+                                </div>
+                                <div class="box has-background-grey-light">
+                                    <div id="tk3" class="box">  </div>
+                                    <button class="button is-primary is-active" onclick="atk3()">Attack 3</button>
+                                </div>
+                                <div class="box">
+                                    <button class="button is-danger is-active" onclick="rollAttack()">ROLL!</button>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="box has-background-grey-light">
+                                    <div id="tk2" class="box">  </div>
+                                    <button class="button is-primary is-active" onclick="atk2()">Attack 2</button>
+                                </div>
+                                <div class="box has-background-grey-light">
+                                    <div id="tk4" class="box">  </div>
+                                    <button class="button is-primary is-active" onclick="atk4()">Attack 4</button>
+                                </div>
+                                <div class="box has-background-grey-light">
+                                    <div id="rolly" class="box"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="invisible">
+        <div id="rollMod"></div>
+        <div id="dado_attack_1"></div><div id="valor_attack_1"></div><div id="modi_attack_1"></div>
+        <div id="dado_attack_2"></div><div id="valor_attack_2"></div><div id="modi_attack_2"></div>
+        <div id="dado_attack_3"></div><div id="valor_attack_3"></div><div id="modi_attack_3"></div>
+        <div id="dado_attack_4"></div><div id="valor_attack_4"></div><div id="modi_attack_4"></div>
     </div>
-    <div class="dropdown">
-    <div id="myDropdown" class="dropdown-content">
-        <a onclick="replace(this)">Ettercap</a>
-        <a onclick="replace(this)">Aarakocra</a>
-        <a onclick="replace(this)">Aboleth</a>
-        <a onclick="replace(this)">Deva</a>
-        <a onclick="replace(this)">Planetar</a>
-        <a onclick="replace(this)">Solar</a>
-        <a onclick="replace(this)">Animated Armor</a>
-        <a onclick="replace(this)">Flying Sword</a>
-        <a onclick="replace(this)">Rug of Smothering</a>
-        <a onclick="replace(this)">Ankheg</a>
-        <a onclick="replace(this)">Azer</a>
-        <a onclick="replace(this)">Banshee</a>
-        <a onclick="replace(this)">Basilisk</a>
-        <a onclick="replace(this)">Behir</a>
-        <a onclick="replace(this)">Beholder</a>
-        <a onclick="replace(this)">Death Tyrant</a>
-        <a onclick="replace(this)">Spectator</a>
-    </div>
-    </div>
 
-
-<div class="evenBigger" onclick="esconder()">
-<div class="superContainer">
-<div class="container">
-    <div><table id="str_mostro"></table></div>
-    <div><table id="dex_mostro"></table></div>
-    <div><table id="con_mostro"></table></div>
-    <div><table id="int_mostro"></table></div>
-    <div><table id="wis_mostro"></table></div>
-    <div><table id="chr_mostro"></table></div>
-</div>
-<div class="containerMod">
-    <div><table id="str_mod"></table></div>
-    <div><table id="dex_mod"></table></div>
-    <div><table id="con_mod"></table></div>
-    <div><table id="int_mod"></table></div>
-    <div><table id="wis_mod"></table></div>
-    <div><table id="chr_mod"></table></div>
-</div>
-</div>
-<div class="container2">
-    <div class="col2">
-        <div id="nombre_mostro"></div>
-        <div id="align_mostro"></div>
-        <div id="ac_mostro"></div>
-        <div id="hp_mostro"></div>
-        <div id="speed_mostro"></div>
-        <div id="size_mostro"></div>
-        <div id="height_mostro"></div>
-        <div id="weight_mostro"></div>
-        <div id="challenge_mostro"></div>
-    </div>
-    <div class="col3">
-        <div id="skill1_mostro"></div>
-        <div id="skill2_mostro"></div>
-        <div id="skill3_mostro"></div>
-        <div id="skill4_mostro"></div>
-    </div>
-
-<div class="salvation1">
-    <div id="savethrow_mostroSTR"><input type="button" value="STR" onclick="str()"><div id="strSave"></div></div>
-    <div id="savethrow_mostroDEX"><input type="button" value="DEX" onclick="dex()"><div id="dexSave"></div></div>
-    <div id="savethrow_mostroCON"><input type="button" value="CON" onclick="con()"><div id="conSave"></div></div>
-    <div id="savethrow_mostroINT"><input type="button" value="INT" onclick="int()"><div id="intSave"></div></div>
-    <div id="savethrow_mostroWIS"><input type="button" value="WIS" onclick="wis()"><div id="wisSave"></div></div>
-    <div id="savethrow_mostroCHR"><input type="button" value="CHR" onclick="chr()"><div id="chrSave"></div></div>
-</div>
-<input type="button" id="reseti" onclick="reseti()" value="Reset">
-</div>
-<div class="bigBottom">
-<div class="col4">
-    <div id="attackDes_mostro"></div>
-    <div id="attack1_mostro"></div>
-    <div id="attack2_mostro"></div>
-    <div id="attack3_mostro"></div>
-    <div id="attack4_mostro"></div>
-</div>
-<div class="salvation2">
-    <div id="atk1"><input type="button" value="Attack 1" onclick="atk1()"><div id="tk1"></div></div>
-    <div id="atk2"><input type="button" value="Attack 2" onclick="atk2()"><div id="tk2"></div></div>
-    <div id="atk3"><input type="button" value="Attack 3" onclick="atk3()"><div id="tk3"></div></div>
-    <div id="atk4"><input type="button" value="Attack 4" onclick="atk4()"><div id="tk4"></div></div>
-    <div class="estoyharto"><div id="ataque"><input id="rollero" type="button" value="Roll" onclick="rollAttack()"></div><div id="rolly"></div></div>
-        
-</div>
-</div>
-
-</div>
-
-<div id="invisible">
-    <div id="rollMod"></div>
-    <div id="dado_attack_1"></div><div id="valor_attack_1"></div><div id="modi_attack_1"></div>
-    <div id="dado_attack_2"></div><div id="valor_attack_2"></div><div id="modi_attack_2"></div>
-    <div id="dado_attack_3"></div><div id="valor_attack_3"></div><div id="modi_attack_3"></div>
-    <div id="dado_attack_4"></div><div id="valor_attack_4"></div><div id="modi_attack_4"></div>
-</div>
-
-</body>
+    </body>
 </html>
